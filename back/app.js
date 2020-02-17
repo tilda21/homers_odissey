@@ -7,6 +7,9 @@ const  morgan  =  require('morgan');
 const  app  =  express();
 const authRouter = require('./routes/auth/auth')
 
+require('dotenv').config();
+
+require('./helpers/db');
 
 // set up the application
 app.use(morgan('dev'));
