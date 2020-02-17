@@ -6,7 +6,7 @@ const signup_post = (req, res, next) => {
             console.log(err)
 			res.status(500).json({ message: 'Error posting user' });
 		} else {
-			res.send('I am in POST signup');
+			res.sendStatus(200);
 		}
 	});
     
